@@ -31,12 +31,12 @@
                                 <td> {{ $question->judul }}</td>
                                 <td> {{ $question->isi }}</td>
                                 <td style="display:flex";> 
-                                    <a href="{{ route('questions.show',['question'=>$question->id]) }}" class="btn btn-info btn-sm">Show</a>
-                                    <a href="{{ route('questions.create') }}" class="btn btn-default btn-sm">Edit</a>
+                                    <a href="{{ route('questions.show',['question'=>$question->id]) }}" class="btn btn-info btn-sm"     >Show</a>
+                                    <a href="{{ route('questions.edit',['question'=>$question->id]) }}" class="btn btn-default btn-sm"  >Edit</a>
                                     <!--<form action="/questions/{{$question->id}}" method="post"> -->>
-                                    <form action="{{ route('questions',['question'=>$question->id]) }}" method="post">                                    @csrf
+                                    <form action="{{ route('questions.destroy',['question'=>$question->id]) }}" method="post">                                    @csrf
                                         @method('DELETE')
-                                        <input type="submit" value="delete" class="btn btn-danger btn-sm">
+                                        <input type="submit" value="Delete" class="btn btn-danger btn-sm">
                                     </form>
                                 </td>
                             </tr>

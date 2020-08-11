@@ -14,13 +14,13 @@
                 <label for="judul1">Judul</label>
                 <input type="text" class="form-control" id="judul1" name="judul1" placeholder="Judul" required>
             </div>
-        </div>    
-        <div class="form-group">
-            <label for="isi1">Isi</label>
-            <input type="text" class="form-control" id="isi1" name="isi1" placeholder="Isi" required>
+        <!--</div>     -->
+            <div class="form-group">
+                <label for="isi1">Isi</label>
+                <input type="text" class="form-control" id="isi1" name="isi1" placeholder="Isi" required>
+            </div>
         </div>
-        </div>
-            <!-- /.card-body -->
+        <!-- /.card-body -->
         <div class="card-footer">
         <button type="submit" class="btn btn-primary">Create</button>
     </div>
